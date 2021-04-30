@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FC20CA6A-0CEB-4F78-9533-AFEFC36D4867"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB6FED12-B8C2-4E2E-B3CF-2214DD89E34F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tic-Tac-Toe/GameViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "determineComputerMovePosition(in:for:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3EE4D864-E96D-4D1F-9F09-2A9A268C4667"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tic-Tac-Toe/GameViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "determineComputerMovePosition(in:for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3EE4D864-E96D-4D1F-9F09-2A9A268C4667 - 27c32da71ee5aa9f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tic_Tac_Toe.GameViewModel.determineComputerMovePosition(in: Swift.Array&lt;Swift.Optional&lt;Tic_Tac_Toe.Move&gt;&gt;, for: Tic_Tac_Toe.DifficultyLevel) -&gt; Swift.Int"
+                  moduleName = "Tic-Tac-Toe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jkouris/Desktop/iOS%20Projects/Sean%20Allen/Tic-Tac-Toe/Tic-Tac-Toe/GameViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "1832">
+               </Location>
+               <Location
+                  uuid = "3EE4D864-E96D-4D1F-9F09-2A9A268C4667 - 89ce9715f399bb36"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Tic_Tac_Toe.Move&gt;) -&gt; Swift.Optional&lt;Tic_Tac_Toe.Move&gt; in Tic_Tac_Toe.GameViewModel.determineComputerMovePosition(in: Swift.Array&lt;Swift.Optional&lt;Tic_Tac_Toe.Move&gt;&gt;, for: Tic_Tac_Toe.DifficultyLevel) -&gt; Swift.Int"
+                  moduleName = "Tic-Tac-Toe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jkouris/Desktop/iOS%20Projects/Sean%20Allen/Tic-Tac-Toe/Tic-Tac-Toe/GameViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  uuid = "3EE4D864-E96D-4D1F-9F09-2A9A268C4667 - acbb4989ceabb5da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Tic_Tac_Toe.Move) -&gt; Swift.Bool in Tic_Tac_Toe.GameViewModel.determineComputerMovePosition(in: Swift.Array&lt;Swift.Optional&lt;Tic_Tac_Toe.Move&gt;&gt;, for: Tic_Tac_Toe.DifficultyLevel) -&gt; Swift.Int"
+                  moduleName = "Tic-Tac-Toe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jkouris/Desktop/iOS%20Projects/Sean%20Allen/Tic-Tac-Toe/Tic-Tac-Toe/GameViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "42">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7ABEBAA8-F16F-4867-BF84-A6452D8FB481"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tic-Tac-Toe/GameViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "determineComputerMovePosition(in:for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7ABEBAA8-F16F-4867-BF84-A6452D8FB481 - 27c32da71ee5afb1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Tic_Tac_Toe.GameViewModel.determineComputerMovePosition(in: Swift.Array&lt;Swift.Optional&lt;Tic_Tac_Toe.Move&gt;&gt;, for: Tic_Tac_Toe.DifficultyLevel) -&gt; Swift.Int"
+                  moduleName = "Tic-Tac-Toe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jkouris/Desktop/iOS%20Projects/Sean%20Allen/Tic-Tac-Toe/Tic-Tac-Toe/GameViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "6338">
+               </Location>
+               <Location
+                  uuid = "7ABEBAA8-F16F-4867-BF84-A6452D8FB481 - b14273e6ec307007"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 (Swift.Optional&lt;Tic_Tac_Toe.Move&gt;) -&gt; Swift.Optional&lt;Tic_Tac_Toe.Move&gt; in Tic_Tac_Toe.GameViewModel.determineComputerMovePosition(in: Swift.Array&lt;Swift.Optional&lt;Tic_Tac_Toe.Move&gt;&gt;, for: Tic_Tac_Toe.DifficultyLevel) -&gt; Swift.Int"
+                  moduleName = "Tic-Tac-Toe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jkouris/Desktop/iOS%20Projects/Sean%20Allen/Tic-Tac-Toe/Tic-Tac-Toe/GameViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "19">
+               </Location>
+               <Location
+                  uuid = "7ABEBAA8-F16F-4867-BF84-A6452D8FB481 - f04faad99243b7f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #5 (Tic_Tac_Toe.Move) -&gt; Swift.Bool in Tic_Tac_Toe.GameViewModel.determineComputerMovePosition(in: Swift.Array&lt;Swift.Optional&lt;Tic_Tac_Toe.Move&gt;&gt;, for: Tic_Tac_Toe.DifficultyLevel) -&gt; Swift.Int"
+                  moduleName = "Tic-Tac-Toe"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jkouris/Desktop/iOS%20Projects/Sean%20Allen/Tic-Tac-Toe/Tic-Tac-Toe/GameViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "45">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

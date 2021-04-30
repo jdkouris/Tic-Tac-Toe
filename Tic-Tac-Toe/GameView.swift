@@ -9,11 +9,22 @@ import SwiftUI
 
 struct GameView: View {
     @StateObject private var viewModel = GameViewModel()
+    @State private var difficultyLevel: DifficultyLevel = .easy
     
     var body: some View {
         GeometryReader { geometry in
             VStack {
                 Spacer()
+                
+                Picker("Select Difficulty", selection: $difficultyLevel) {
+                    ForEach(DifficultyLevel.allCases, id: \.self) { value in
+                        Text(value.localizedName).tag(value)
+                    }
+                }
+                .pickerStyle(SegmentedPickerStyle())
+                
+                Spacer()
+                
                 LazyVGrid(columns: viewModel.columns, spacing: 5) {
                     ForEach(0..<9) { i in
                         ZStack {
@@ -21,10 +32,11 @@ struct GameView: View {
                             PlayerIndicator(systemImageName: viewModel.moves[i]?.indicator ?? "")
                         }
                         .onTapGesture {
-                            viewModel.processPlayerMove(for: i)
+                            viewModel.processPlayerMove(for: i, difficulty: difficultyLevel)
                         }
                     }
                 }
+                
                 Spacer()
             }
             .disabled(viewModel.isGameboardDisabled)
@@ -40,6 +52,12 @@ struct GameView: View {
 
 enum Player {
     case human, computer
+}
+
+enum DifficultyLevel: String, CaseIterable {
+    case easy = "Easy", medium = "Medium", hard = "Hard"
+    
+    var localizedName: LocalizedStringKey { LocalizedStringKey(rawValue) }
 }
 
 struct Move {
