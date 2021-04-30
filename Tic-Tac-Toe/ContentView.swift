@@ -14,7 +14,6 @@ struct ContentView: View {
                                GridItem(.flexible())]
     
     @State private var moves: [Move?] = Array(repeating: nil, count: 9)
-    @State private var isHumansTurn = true
     
     var body: some View {
         GeometryReader { geometry in
@@ -36,9 +35,12 @@ struct ContentView: View {
                         }
                         .onTapGesture {
                             if isSquareOccupied(in: moves, forIndex: i) { return }
+                            moves[i] = Move(player: .human, boardIndex: i)
                             
-                            moves[i] = Move(player: isHumansTurn ? .human : .computer, boardIndex: i)
-                            isHumansTurn.toggle()
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                                let computerPosition = determineComputerMovePosition(in: moves)
+                                moves[computerPosition] = Move(player: .computer, boardIndex: computerPosition)
+                            }
                         }
                     }
                 }
@@ -50,6 +52,16 @@ struct ContentView: View {
     
     func isSquareOccupied(in moves: [Move?], forIndex index: Int) -> Bool {
         return moves.contains(where: { $0?.boardIndex == index })
+    }
+    
+    func determineComputerMovePosition(in moves: [Move?]) -> Int {
+        var movePosition = Int.random(in: 0..<9)
+        
+        while isSquareOccupied(in: moves, forIndex: movePosition) {
+            movePosition = Int.random(in: 0..<9)
+        }
+        
+        return movePosition
     }
 }
 
