@@ -9,14 +9,13 @@ import SwiftUI
 
 struct GameView: View {
     @StateObject private var viewModel = GameViewModel()
-    @State private var difficultyLevel: DifficultyLevel = .easy
     
     var body: some View {
         GeometryReader { geometry in
             VStack {
                 Spacer()
                 
-                Picker("Select Difficulty", selection: $difficultyLevel) {
+                Picker("Select Difficulty", selection: $viewModel.level) {
                     ForEach(DifficultyLevel.allCases, id: \.self) { value in
                         Text(value.localizedName).tag(value)
                     }
@@ -32,7 +31,7 @@ struct GameView: View {
                             PlayerIndicator(systemImageName: viewModel.moves[i]?.indicator ?? "")
                         }
                         .onTapGesture {
-                            viewModel.processPlayerMove(for: i, difficulty: difficultyLevel)
+                            viewModel.processPlayerMove(for: i, difficulty: viewModel.level)
                         }
                     }
                 }
