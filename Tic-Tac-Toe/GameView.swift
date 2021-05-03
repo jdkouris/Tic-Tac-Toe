@@ -15,12 +15,16 @@ struct GameView: View {
             VStack {
                 Spacer()
                 
-                Picker("Select Difficulty", selection: $viewModel.level) {
-                    ForEach(DifficultyLevel.allCases, id: \.self) { value in
-                        Text(value.localizedName).tag(value)
+                VStack {
+                    Text("Difficulty Level")
+                        .font(.system(.headline))
+                    Picker("", selection: $viewModel.level) {
+                        ForEach(DifficultyLevel.allCases, id: \.self) { value in
+                            Text(value.localizedName).tag(value)
+                        }
                     }
+                    .pickerStyle(SegmentedPickerStyle())
                 }
-                .pickerStyle(SegmentedPickerStyle())
                 
                 Spacer()
                 
